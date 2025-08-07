@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio - Dynamic Showcase</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper" id="loader">
+        <div class="loader">
+            <div class="loader-text">Loading Portfolio...</div>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Portfolio</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link contact-btn">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight" id="typing-text">Naladala Vishnu Chowdary</span>
+                    </h1>
+                    <p class="hero-subtitle">Salesforce Developer Trinee</p>
+                    <p class="hero-description">
+                        Passionate about creating innovative digital solutions and exploring the latest technologies. 
+                        Currently Trining With the Salesforce CRM Technology.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/vishnu-chowdary" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="www.linkedin.com/in/vishnu-chowdary-naladala-52373122b" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="./images/nvcprofileimg.jpg" alt="Profile Picture" id="profile-img">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills-tab')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience-tab')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education-tab')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills-tab">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Java, Apex Programming, JavaScript</li>
+                            <li><span>Web Development</span><br>HTML5, CSS3, Lightning Web Components</li>
+                            <li><span>Database</span><br>Oracle SQL, SOQL</li>
+                            <li><span>Cloud Technologies</span><br>Salesforce Admin, Salesforce Developer</li>
+                            <li><span>Tools & Technologies</span><br>Git, MSExcL</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience-tab">
+                        <ul>
+                            <li><span>2025 - Present</span><br>Salesforce Developer Trinee at Capital Info Solutions.</li>
+                            <li><span>2023 - 2024</span><br>Trained as Java Full Stack Developer.</li>
+                            <!-- <li><span>2022</span><br>Teaching Assistant for Web Development Course</li> -->
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education-tab">
+                        <ul>
+                            <li><span>2018 - 2022</span><br>Bachelor of Engineering in Electronics and Communications<br>Jawharlal Nehru Technological University, Anantapur</li>
+                            <li><span>2016 - 2018</span><br>Intermediate in M.P.C<br>Sri Chaitanya Jr College, Nellore</li>
+                            <li><span>2015 - 2016</span><br>SSC<br>Bhashyam High School, Guntur</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="./images/aboutme image.jpg" alt="About Me">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <h3>HTML/CSS</h3>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="90"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <h3>JavaScript</h3>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="85"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <h3>Apex Programming</h3>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="80"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <h3>Java</h3>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="75"></div>
+                    </div>
+                </div>
+
+                <!-- <div class="skill-item">
+                    <div class="skill-info">
+                        <h3>Node.js</h3>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="70"></div>
+                    </div>
+                </div> -->
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <h3>Database Management</h3>
+                        <span class="skill-percentage">65%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="65"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Admin Projects</button>
+                <button class="filter-btn" data-filter="mobile">Developer Projects</button>
+                <button class="filter-btn" data-filter="design">Web Development</button>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="./images/Sales Process Automation img.png" alt="Sales Process Automation">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Sales Process Automation for a Car Dealership</h3>
+                        <p>This project automates and manages the car sales process within a dealership using 
+                            Salesforce. It covers lead management, customer booking, car inventory, discount 
+                            approvals, and performance reporting. The system integrates automation, Apex logic, and 
+                            dashboards for a complete CRM experience. </p>
+                        <p><span style="text-decoration: underline;">Admin Concepts Applied:</span><br></p>    
+                        <div class="project-tags">
+                            <span class="tag">Custom Objects</span>
+                            <span class="tag">Fields</span>
+                            <span class="tag">Relationships</span>
+                            <span class="tag">Validation Rules</span>
+                            <span class="tag">Approval Processes</span>
+                            <span class="tag">Flows & Process Builder Automation</span>
+                            <span class="tag">Reports & Dashboards</span>
+                            <span class="tag">Profiles</span>
+                            <span class="tag">Roles</span>
+                            <span class="tag">Permission Sets</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="./images/lead-auto-conversion-img.png" alt="Lead Auto-Conversion System">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Lead Auto-Conversion System</h3>
+                        <p>Automatically convert qualified leads into Account, Contact, and Opportunity records 
+                            once their status is updated to "Closed - Converted" using Apex triggers.<br></p>
+                        <p><span style="text-decoration: underline;">Developer Concepts Applied:</span></p>    
+                        <div class="project-tags">
+                            <span class="tag">Apex Triggers</span>
+                            <span class="tag">Apex Classes</span>
+                            <span class="tag">SOQL</span>
+                            <span class="tag">Test Classes</span>
+                            <span class="tag">Debug Logs</span>
+                            <span class="tag">Deployment Tools</span>
+                            <span class="tag">Custom Settings</span>
+                            <span class="tag">VS Code with Salesforce Extensions</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="./images/cartoon-portfolio-img.jpg" alt="Portfolio Website">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Responsive Portfolio Website</h3>
+                        <p>Personal portfolio website with modern design, smooth animations, and dynamic content management.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300?text=UI/UX+Design" alt="UI/UX Design">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Mobile Banking App Design</h3>
+                        <p>Complete UI/UX design for a modern mobile banking application with user-centered design principles.</p>
+                        <div class="project-tags">
+                            <span class="tag">Figma</span>
+                            <span class="tag">Prototyping</span>
+                            <span class="tag">User Research</span>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="./images/case-management-img.jpg" alt="Case Management System">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Case Management System</h3>
+                        <p>To build a real-time support ticket system that allows customer service agents to manage 
+                            and resolve customer issues effectively using the Salesforce Case object. This system 
+                            integrates automation, assignment rules, escalations, and reporting for end-to-end 
+                            support management.<br></p>
+                        <p><span style="text-decoration: underline;">Admin Concepts Applied:</span><br></p>    
+                        <div class="project-tags">
+                            <span class="tag">Case Object</span>
+                            <span class="tag">Assignment</span>
+                            <span class="tag">Escalation Rules</span>
+                            <span class="tag">Web-to-Case</span>
+                            <span class="tag">Email-to-Case</span>
+                            <span class="tag">Knowledge Setup</span>
+                            <span class="tag">Service Console basics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="./images/REST API for Employee Records img.png" alt="Custom REST API for Employee">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Custom REST API for Employee Records</h3>
+                        <p>This project involved building a custom REST API using Apex in Salesforce to manage Employee Records (Create, Retrieve). The main objective was to expose Salesforce data to external systems through a secure, lightweight, and customizable RESTful interface.
+                            This solution is useful for integrating Salesforce with third-party HR systems or internal portals requiring real-time access to employee data.</p>
+                        <p><span style="text-decoration: underline;">Developer Concepts Applied:</span><br></p>    
+                        <div class="project-tags">
+                            <span class="tag">Apex @RestResource Class</span>
+                            <span class="tag">JSON.deserialize()</span>
+                            <span class="tag">JSON.serialize()</span>
+                            <span class="tag">Workbench / Postman</span>
+                            <span class="tag">Named Credentials</span>
+                            <span class="tag">Remote Site Settings</span>
+                            <span class="tag">Security</span>
+                            <span class="tag"> VS Code with Salesforce CLI</span>
+                            <span class="tag">Salesforce Setup for Permission Sets</span>
+                            <span class="tag">Test Classes for API endpoints</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience & Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2025 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Salesforce Developer Trinee</h3>
+                        <h4>Capital Info Solutions</h4>
+                        <p>Developing applications using Apex Programming and collaborating with senior developers on client projects. Gained experience in agile development methodologies and version control systems.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 - 2024</div>
+                    <div class="timeline-content">
+                        <h3>Freelance Web Developer</h3>
+                        <h4>Self-Employed</h4>
+                        <p>Completed various web development projects for small businesses and startups. Specialized in creating custom websites and web applications using modern technologies.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2021 - 2025</div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Science in Computer Science</h3>
+                        <h4>University of Technology</h4>
+                        <p>Currently pursuing degree with focus on software engineering, data structures, algorithms, and web technologies. Maintaining a GPA of 3.8/4.0.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2022</div>
+                    <div class="timeline-content">
+                        <h3>Teaching Assistant</h3>
+                        <h4>University of Technology</h4>
+                        <p>Assisted in teaching introductory web development courses, helping students understand HTML, CSS, and JavaScript fundamentals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>I'm always interested in new opportunities and challenging projects. Feel free to reach out if you'd like to collaborate or just have a chat about technology.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>vcnaladala@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+916303110836</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Hyderabad, Telangana</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                                <span class="error-message" id="firstNameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                                <span class="error-message" id="lastNameError"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email Address" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <select id="subject" name="subject" required>
+                                <option value="">Select Subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="project">Project Collaboration</option>
+                                <option value="job">Job Opportunity</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-message" id="subjectError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <div class="btn-loader"></div>
+                        </button>
+
+                        <div class="form-status" id="formStatus"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3>Naladala Vishnu Chowdary</h3>
+                    <p>Salesforce Admin & Developer</p>
+                </div>
+                <div class="footer-center">
+                    <p>&copy; 2025 Naladala Vishnu Chowdary. All rights reserved.</p>
+                </div>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
